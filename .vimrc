@@ -11,9 +11,6 @@ set clipboard=unnamed
 " Show line numbers
 set number
 
-" Show statusline
-set laststatus=2
-
 " Vundle config
 set nocompatible
 filetype off
