@@ -23,9 +23,17 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'kristijanhusak/vim-hybrid-material'
 call vundle#end()
 filetype plugin indent on
 
 " Always open NERDTree
 autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
+
+set background=dark
+colorscheme hybrid_material
+
+" Keep swap files but dump them in a separate dir
+set backupdir=~/.tmp,.
+set dir=~/.tmp,.
