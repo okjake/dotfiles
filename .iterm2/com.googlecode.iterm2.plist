@@ -59,7 +59,7 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>82 293 770 381 0 0 1280 800 </string>
+	<string>82 225 918 512 0 0 1280 800 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>105 249 570 427 0 0 1280 777 </string>
 	<key>New Bookmarks</key>
@@ -294,7 +294,7 @@
 			<key>Custom Command</key>
 			<string>No</string>
 			<key>Custom Directory</key>
-			<string>No</string>
+			<string>Recycle</string>
 			<key>Default Bookmark</key>
 			<string>No</string>
 			<key>Description</key>
@@ -765,6 +765,10 @@
 	<key>TabStyle</key>
 	<integer>3</integer>
 	<key>UseBorder</key>
+	<false/>
+	<key>findIgnoreCase_iTerm</key>
+	<true/>
+	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
 	<string>3.0.9</string>
