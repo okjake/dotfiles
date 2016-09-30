@@ -3,6 +3,10 @@
 # Ask for the administrator password upfront
 sudo -v
 
+echo "Set iTerm2 dir"
+defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -int 1
+defaults write com.googlecode.iterm2 PrefsCustomFolder -string "/Users/jakepyne/.iterm2"
+
 echo "Setup global gitignore"
 git config --global core.excludesfile ~/.gitignore.global
 
@@ -23,7 +27,8 @@ echo "Reveal extra details through login window clock"
 sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
 
 echo "Set fast keyboard repeat rate"
-defaults write NSGlobalDomain KeyRepeat -int 0
+defaults write NSGlobalDomain KeyRepeat -int 2
+defaults write NSGlobalDomain InitialKeyRepeat -int 15
 
 echo "Use column view in Finder by default"
 defaults write com.apple.finder FXPreferredViewStyle Clmv
