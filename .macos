@@ -3,6 +3,9 @@
 # Ask for the administrator password upfront
 sudo -v
 
+echo "Hide airplay menu icon"
+defaults write com.apple.airplay showInMenuBarIfPresent -int 0
+
 echo "Hide Siri menu item"
 defaults write com.apple.Siri StatusMenuVisible -int 0
 
