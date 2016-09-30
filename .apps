@@ -9,6 +9,9 @@ brew install node
 echo "Mas"
 brew install mas
 
+echo "Xcode"
+mas install 497799835
+
 echo "Slack"
 mas install 803453959
 
