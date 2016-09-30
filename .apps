@@ -1,0 +1,37 @@
+#!/bin/sh
+
+echo "Homebrew"
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+echo "Node"
+brew install node
+
+echo "Mas"
+brew install mas
+
+echo "Slack"
+mas install 803453959
+
+echo "Airmail"
+mas install 918858936
+
+echo "Affinity Photo"
+mas install 824183456
+
+echo "1Password"
+mas install 443987910
+
+echo "Sketch"
+curl https://www.sketchapp.com/static/download/sketch.zip > ~/Applications/Sketch.app
+
+echo "Paw"
+curl https://paw.cloud/download > /Applications/Paw.app
+
+echo "Chrome"
+curl https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg > ~/Downloads/googlechrome.dmg
+open ~/Downloads/googlechrome.dmg
+
+echo "Vundle"
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+vim +PluginInstall +qall
+
