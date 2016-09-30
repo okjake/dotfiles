@@ -12,6 +12,16 @@
 	<integer>1</integer>
 	<key>Default Bookmark Guid</key>
 	<string>F9CC8A72-9954-4BED-AEC5-F86A8FD1036C</string>
+	<key>DimBackgroundWindows</key>
+	<true/>
+	<key>HideMenuBarInFullscreen</key>
+	<true/>
+	<key>HideScrollbar</key>
+	<true/>
+	<key>HideTabCloseButton</key>
+	<true/>
+	<key>HideTabNumber</key>
+	<false/>
 	<key>LoadPrefsFromCustomFolder</key>
 	<integer>1</integer>
 	<key>NSNavLastRootDirectory</key>
@@ -49,7 +59,7 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>82 240 796 473 0 0 1280 800 </string>
+	<string>82 293 770 381 0 0 1280 800 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>105 249 570 427 0 0 1280 777 </string>
 	<key>New Bookmarks</key>
@@ -745,6 +755,16 @@
 	<key>SULastCheckTime</key>
 	<date>2016-09-30T16:07:54Z</date>
 	<key>SUSendProfileInfo</key>
+	<false/>
+	<key>ShowFullScreenTabBar</key>
+	<true/>
+	<key>ShowPaneTitles</key>
+	<false/>
+	<key>SplitPaneDimmingAmount</key>
+	<real>0.135927483974359</real>
+	<key>TabStyle</key>
+	<integer>3</integer>
+	<key>UseBorder</key>
 	<false/>
 	<key>iTerm Version</key>
 	<string>3.0.9</string>
