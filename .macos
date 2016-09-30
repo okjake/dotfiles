@@ -3,6 +3,9 @@
 # Ask for the administrator password upfront
 sudo -v
 
+echo "Hide Siri menu item"
+defaults write com.apple.Siri StatusMenuVisible -int 0
+
 echo "Set iTerm2 dir"
 defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -int 1
 defaults write com.googlecode.iterm2 PrefsCustomFolder -string "/Users/jakepyne/.iterm2"
