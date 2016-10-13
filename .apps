@@ -9,6 +9,9 @@ brew install node
 echo "Mas"
 brew install mas
 
+echo "Yarn"
+brew install yarn
+
 echo "Xcode"
 mas install 497799835
 
@@ -42,4 +45,7 @@ unzip ~/Downloads/iTerm2.zip -d /Applications
 echo "Vundle"
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
+
+echo "Quicklook Markdown"
+brew cask install qlmarkdown
 
