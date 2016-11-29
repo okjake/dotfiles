@@ -30,6 +30,8 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'rakr/vim-two-firewatch'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 
 call vundle#end()
 filetype plugin indent on
@@ -45,3 +47,8 @@ let g:airline_theme='twofirewatch'
 " Keep swap files but dump them in a separate dir
 set backupdir=~/.tmp,.
 set dir=~/.tmp,.
+
+" 2 space tabs
+set tabstop=2
+set shiftwidth=2
+set expandtab
