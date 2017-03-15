@@ -26,12 +26,13 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'rakr/vim-two-firewatch'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
+Plugin 'w0ng/vim-hybrid'
 
 call vundle#end()
 filetype plugin indent on
@@ -41,8 +42,7 @@ autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
 
 set background=dark
-colorscheme two-firewatch
-let g:airline_theme='twofirewatch'
+colorscheme hybrid
 
 " Keep swap files but dump them in a separate dir
 set backupdir=~/.tmp,.
@@ -52,3 +52,10 @@ set dir=~/.tmp,.
 set tabstop=2
 set shiftwidth=2
 set expandtab
+
+set guioptions-=T
+set guioptions-=r
+set guioptions-=L
+
+set linespace=6
+set guifont=Menlo\ Regular:h14
