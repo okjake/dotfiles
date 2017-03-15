@@ -12,6 +12,9 @@ brew install mas
 echo "Yarn"
 brew install yarn
 
+echo "Jump"
+brew install jump
+
 echo "Xcode"
 mas install 497799835
 
