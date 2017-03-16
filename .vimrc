@@ -15,7 +15,7 @@ set number
 let NERDTreeMinimalUI=1
 
 " Remove pipe chars from NERDTree window boundary
-:set fillchars+=vert:\ 
+set fillchars+=vert:\ 
 
 " Vundle config
 set nocompatible
@@ -44,6 +44,9 @@ autocmd VimEnter * wincmd p
 set background=dark
 colorscheme hybrid
 
+" Hide tilde chars
+hi NonText guifg=bg
+
 " Keep swap files but dump them in a separate dir
 set backupdir=~/.tmp,.
 set dir=~/.tmp,.
@@ -59,3 +62,5 @@ set guioptions-=L
 
 set linespace=6
 set guifont=Menlo\ Regular:h14
+
+map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
