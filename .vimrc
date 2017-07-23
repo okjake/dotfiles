@@ -26,12 +26,12 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/syntastic'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
+Plugin 'w0rp/ale'
 Plugin 'w0ng/vim-hybrid'
 
 call vundle#end()
@@ -42,6 +42,8 @@ autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
 
 set background=dark
+let g:hybrid_custom_term_colors = 1
+let g:hybrid_reduced_contrast = 1
 colorscheme hybrid
 
 " Hide tilde chars
@@ -61,6 +63,10 @@ set guioptions-=r
 set guioptions-=L
 
 set linespace=6
-set guifont=Menlo\ Regular:h14
+set guifont=Menlo\ Regular:h13
 
 map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+
+set backspace=indent,eol,start
+set mouse=a
