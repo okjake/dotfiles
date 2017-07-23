@@ -3,6 +3,9 @@
 echo "Homebrew"
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+echo "Modern VIM"
+brew install vim --with-override-system-vi
+
 echo "Node"
 brew install node
 
@@ -52,3 +55,5 @@ vim +PluginInstall +qall
 echo "Quicklook Markdown"
 brew cask install qlmarkdown
 
+echo "iTermocil"
+brew install TomAnthony/brews/itermocil
